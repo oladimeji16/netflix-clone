@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 
 import Row from './Components/Rows/Rows'
 import Banner from './Components/Banner/Banner'
+import Navbar from './Components/Navbar/Navbar'
 import requests from './Utils/request'
 
 import "./App.css";
@@ -10,7 +11,7 @@ function App() {
   useEffect(() => {}, []);
   return (
     <div className="App">
-      {/* nav Bar */}
+      <Navbar />
       <Banner />
       <Row
         title="NETFLIX ORIGINALS"
